@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.34 65">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: TitanOne, 'Titan One';
+        font-size: 17.98px;
+        letter-spacing: .06em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: .17px;
+      }
+    </style>
+  </defs>
+  <g id="orbitz_logo">
+    <text class="cls-1" transform="translate(21.16 38.2)"><tspan x="0" y="0">RBITZ</tspan></text>
+    <text class="cls-1" transform="translate(0 37.83)"><tspan x="0" y="0">O</tspan></text>
+    <path class="cls-2" d="M79.73,32.87c.04,.1,.06,.2,.06,.3,0,2.67-12.87,4.84-28.74,4.84s-28.74-2.17-28.74-4.84c0-.08,.01-.15,.03-.23-9.71,1.04-15.87,2.58-15.87,4.31,0,3.12,20.1,5.65,44.89,5.65s44.89-2.53,44.89-5.65c0-1.77-6.44-3.34-16.53-4.38Z"/>
+    <path class="cls-3" d="M50.56,0C32.61,0,18.06,14.55,18.06,32.5s14.55,32.5,32.5,32.5,32.5-14.55,32.5-32.5S68.51,0,50.56,0Zm0,60.78c-15.83,0-28.67-12.66-28.67-28.28S34.73,4.22,50.56,4.22s28.67,12.66,28.67,28.28-12.84,28.28-28.67,28.28Z"/>
+  </g>
+</svg>

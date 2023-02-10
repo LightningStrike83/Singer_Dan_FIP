@@ -1,0 +1,141 @@
+Desktop Information:
+General-
+Desktop page width: 1200px
+Primary Grid Columns: 8
+Primary Grid Column Width: 136px
+Primary Grid Gutter Width: 16px
+Viewport Height Desktop: 1080px
+Secondary Grid Columns: 3
+Secondary Grid Column Width: 136px
+Secondary Grid Gutter Width: 16px
+Grid Rows: 0px
+
+Measurements-
+Header Logo: 288px X 110px
+Header Logo Margin Top: 55px
+Header Nav Section 1: 440px X 110px
+Header Nav Section 1: Margin Top: 55px
+Header Nav Section 2: 288px X 110px
+Header Nav Section 2 Margin Top: 55px
+Header BG: 1200px X 220px
+Visual Appeal BG: 1200px X 840px
+Flavours Slider: 592px X 600px
+Flavours Text: 440px X 410px
+Flavours Text Margin Top: 95px
+Flavours BG: 1200px X 600px
+Collab Bottle Area: 288px X 600px
+Collab Information: 440px X 600px
+Collab Mascot: 440px X 600px
+Collab BG: 1200px X 600px
+Information Buttons (Left and Right): 70px X 70px
+Information Slider Indicators: 26px X 26px
+Information Slider Indicators Border Radius: 20px
+Information Slider Indicators Margin Top: 564px
+Information Slider Indicators Margin Right: 10px
+Information Slider Indicators First Margin Left: 95px
+Information BG: 1200px X 600px
+Updates Images (x3): 288px X 300px
+Updates BG: 288px x 600px
+Updates Area: 1200px X 600px
+Footer Logo: 288px X 110px
+Footer Logo Margin Top: 40px
+Footer Nav: 440px X 227px
+Footer Social Media Icons Area: 288px X 277px
+Footer Social Media Margin Between Icons: 25.5px
+Social Media Icons Row 1 Margin Top: 47px
+Social Media Icons Row 2 Margin Top: 53px
+Footer Social Media Icons Margin Right of Last Icon: 17px
+Footer Social Media Icons Margin Right of Last Icon: 17px
+Footer Social Media Icons: 65px X 65px
+Footer Contact Form Area: 440px X 227px
+Contact Form Preferred Name: 288px X 40px
+Contact Form Preferred Name Margin Top: 20px
+Contact Form Email: 288px X 40px
+Contact Form Email Margin Top: 79px
+Contact Form Submit Button: 70px X 35px
+Contact Form Submit Button Top Margin: 233px
+Contact Form Submit Button Left Margin: 66px
+Contact Form Text Area: 288px X 130px
+Contact Form Text Area Margin: 138px
+Footer BG: 1200px X 530px
+Web Page Size: 1200px X 4107px+
+
+Mobile Information:
+General-
+Mobile page width: 428px
+Primary Grid Columns: 4
+Primary Grid Column Width: 98px
+Primary Grid Gutter Width: 12px
+Viewport Height Mobile: 812px
+Secondary Grid Columns: 4
+Secondary Grid Column Width: 98px
+Secondary Grid  Width: 12px
+Grid Auto Rows: 0px
+
+Measurements-
+Header Logo: 207px X 110px
+Header Logo Margin Top: 55px
+Header BG: 428px X 220px
+Hamburger Menu: 207px X 110px
+Hamburger Menu Margin Top: 55px
+Hamburger Menu Line: 110px X 5px
+Hamburger Menu Line Margin Top: 23px
+Hamburger Menu Line Margin Left: 49px
+Hamburger Menu First Line Margin Top: 27px
+Visual Appeal Image: 428px X 527px
+Flavours Image: 428px X 260px
+Flavours Image Margin Top: 33px
+Flavours Text Area: 428px X 185px
+Flavours Text Margin Top: 325px
+Flavours BG: 428px X 542px
+Collab Bottle Area: 208px X 300px
+Collab Bottle Margin Top: 15px
+Collab Mascot Area: 208px x 300px
+Collab Mascot Margin Top: 15px
+Collab Text Area: 428px X 180px
+Collab Text Area Margin Top: 330px
+Collab BG: 428px X 525px
+Information Buttons (Left and Right): 70px X 70px
+Information Slider Indicators: 26px X 26px
+Information Slider Indicators Border Radius: 20px
+Information Slider Indicators Margin Top: 496px
+Information Slider Indicators Margin Right: 10px
+Information Slider Indicators First Margin Left: 55px
+Information BG: 428px x 542px
+Updates Images x3: 208px x 200px
+Updates Area x3: 208px X 400px
+Update 2 Margin Top: 421px
+Update 3 Margin Top: 842px
+Update Area’s Margin Bottom: 20px
+Updates Opaque Area: 428px X 1242px
+Footer Logo: 207px X 110px
+Footer Logo Margin Top: 20px
+Footer Social Media Icons: 50px X 50px
+Footer Social Media Area: 428px X 90px
+Footer Social Media Icons Margin Top: 150px
+Footer Social Media Icons Margin Between Icons: 10.8px
+Footer Social Media Icons Margin Left of First Icon: 27px
+Footer Social Media Icons Margin Right of Last Icon: 27px
+Footer Nav: 428px X 200px
+Footer Nav Margin Top: 260px
+Footer Contact Form: 428px X 269px
+Contact Form Preferred Name: 208px X 30px
+Contact Form Preferred Name Margin Top: 14px
+Contact Form Email: 208px X 30px
+Contact Form Email Margin Top: 64px
+Contact Form Text Area: 208px X 100px
+Contact Form Area Margin Top: 114px
+Submit Button: 60px X 30px
+Submit Button Margin Top: 229px
+Submit Button Margin Left: 74px
+Footer BG: 428px X 769px
+Web Page Size: 428px X 4800px+
+
+Other:
+Hamburger Menu Lines (Mobile): 110px X 3px 
+Margin Between Sections: 20px
+Logo Font: Titan One
+Light Grey Box: #AFAFAF
+Medium Grey Box: #7B7B7B
+Dark Grey Box: #3B3B3B
+Background Colour: #242424
