@@ -1,4 +1,248 @@
-nav ul li {
-    display: inline-block;
+/* 1. General Styles */
+
+.hidden {
+    display: none;
+}
+
+a {
     text-decoration: none;
+    color: #231f20;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Itim', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #231f20;
+}
+
+a:visited {
+    color: #231f20;
+}
+
+section, header {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.boxcolour {
+    background-color: darkblue;
+}
+
+.boxcolour3 {
+    background-color: orange;
+}
+
+.disappear {
+    display: block;
+}
+
+.appear {
+    display: none;
+}
+
+#logo-top:hover .cls-1-logo, #logo-bottom:hover .cls-1-logo {
+    fill: #e4e4e4;
+}
+
+/* 2. Container */
+
+#container {
+    margin: 0 auto;
+    background-color: black;
+    display: grid
+}
+
+/* 3. Header */
+
+#main_header {
+    height: 170px;
+    margin: 0;
+}
+
+#header_logo {
+    height: 110px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+#header_logo svg {
+    height: 110px;
+}
+
+#hamburger {
+    height: 110px;
+    align-self: center;
+}
+
+#main_nav_1 {
+    height: 110px;
+    align-self: center;
+}
+
+#main_nav_2 {
+    height: 110px;
+    align-self: center;
+}
+
+
+/* 4. Visual Appeal */
+
+#visual_appeal {
+    height: 527px;
+}
+
+/* 5. Flavours */
+
+#flavours {
+    height: 542px;
+}
+
+#flavours_slider {
+    height: 260px;
+    align-self: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+#flavours_text {
+    height: 185px;
+    align-self: center;
+}
+
+/* 6. Collab */
+
+#collab {
+    height: 525px;
+}
+
+#new_flavour {
+    height: 300px;
+}
+
+#mascot {
+    height: 300px;
+}
+
+#collab_info {
+    height: 180px;
+    margin-top: 20px;
+}
+
+/* 7. Information */
+
+#information {
+    height: 542px;
+}
+
+/* 8. Footer */
+
+#main_footer {
+    height: 769px;
+}
+
+#logo_footer  {
+    margin-top: 20px;
+    height: 110px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo_footer svg {
+    height: 110px;
+}
+
+#social_media_icons {
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+#footer_nav {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#contact_form {
+    height: 269px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .disappear {
+        display: none;
+    }
+
+    .appear {
+        display: block;
+    }
+
+    #main_header {
+        height: 150px;
+    }
+
+    #visual_appeal {
+        height: 562px;
+    }
+
+    #flavours, #flavours_slider, #collab, #new_flavour, #mascot, #collab_info, #information {
+        height: 512px;
+    }
+
+    #flavours_slider {
+        margin: 0;
+    }
+
+    #flavours_text {
+        height: 350px;
+    }
+
+    #collab_info {
+        margin-top: 0;
+    }
+
+    #mascot {
+        order: 1;
+    }
+
+    #main_footer {
+        height: 432px;
+    }
+
+    #logo_footer {
+        margin-top: 40px;
+    }
+
+    #social_media_icons, #footer_nav, #contact_form {
+        height: 237px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #visual_appeal {
+        height: 840px;
+    }
+    
+    #flavours, #flavours_slider, #collab, #new_flavour, #mascot, #collab_info, #information {
+        height: 600px;
+    }
+
+    #flavours_text {
+        height: 410px;
+    }
+
+    #main_footer {
+        height: 530px;
+    }
+
+    #social_media_icons, #footer_nav, #contact_form {
+        height: 277px;
+    }
+
+    #logo_footer {
+        margin-bottom: 40px;
+    }
 }
