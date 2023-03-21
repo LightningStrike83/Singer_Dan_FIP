@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 321.28 216.95">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #f4f4f5;
+      }
+
+      .cls-2 {
+        font-family: TitanOne, 'Titan One';
+        font-size: 60px;
+        letter-spacing: .06em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(70.62 127.49)"><tspan x="0" y="0">RBITZ</tspan></text>
+  <text class="cls-2" transform="translate(0 126.25)"><tspan x="0" y="0">O</tspan></text>
+  <path class="cls-1" d="M266.1,109.71c.12,.33,.2,.67,.2,1,0,8.92-42.94,16.16-95.91,16.16s-95.91-7.23-95.91-16.16c0-.26,.04-.52,.12-.77-32.41,3.46-52.98,8.62-52.98,14.38,0,10.41,67.08,18.85,149.83,18.85s149.83-8.44,149.83-18.85c0-5.89-21.51-11.16-55.18-14.61Z"/>
+  <path class="cls-1" d="M168.75,0C108.84,0,60.27,48.56,60.27,108.47s48.56,108.47,108.47,108.47,108.47-48.56,108.47-108.47S228.65,0,168.75,0Zm0,202.87c-52.85,0-95.69-42.26-95.69-94.4S115.9,14.07,168.75,14.07s95.69,42.26,95.69,94.4-42.84,94.4-95.69,94.4Z"/>
+</svg>

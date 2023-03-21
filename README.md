@@ -18,6 +18,7 @@ Singer, Dan
 
 01/08/22- Created repo and updated readme  
 02/10/22- Collected current assets  
+03/20/22- Added responsive box designs and information, added files from midterm, added logos to main pages    
 
 ## Credits
 
