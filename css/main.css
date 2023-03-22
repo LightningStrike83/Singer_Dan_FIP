@@ -46,6 +46,10 @@ section, header {
     fill: #e4e4e4;
 }
 
+body {
+    background-image: url(../images/starry_background.jpg);
+}
+
 /* 2. Container */
 
 #container {
@@ -74,16 +78,57 @@ section, header {
 #hamburger {
     height: 110px;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#main_nav_1 {
-    height: 110px;
-    align-self: center;
+#hamburger:first-of-type {
+    margin-top: 27px;
 }
 
-#main_nav_2 {
-    height: 110px;
-    align-self: center;
+#hamburger input, #burger-con {
+    display: none;
+}
+
+#hamburger img {
+    height: 46px;
+}
+
+#hamburger input:checked ~ label span {
+    transform: rotate(90deg);
+}
+
+#hamburger input:checked ~ #burger-con {
+    display: block;
+}
+
+#hamburger li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: #231f20 2px solid;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#hamburger li:first-of-type {
+    padding-top: 10px;
+}
+
+#hamburger li:last-of-type {
+    border-bottom: none;
+}
+
+#hamburger ul {
+    background-color: #8A28C8;
+}
+
+#hamburger li:hover a {
+    color: white;
+}
+
+#main_nav_1, #main_nav_2 {
+    display: none;
 }
 
 
@@ -157,11 +202,58 @@ section, header {
 #social_media_icons {
     height: 90px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.smicons {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+#facebook_icon .cls-2-fb, #twitter_icon .cls-2-twt, #instagram_logo .cls-1-ins, #youtube_icon .cls-2-yt, #reddit_icon .cls-2-reddit, #tumblr_icon .cls-2-tbr {
+    fill: #231f20;
+}
+
+#facebook_icon:hover .cls-1-fb, #twitter_icon:hover .cls-1-twt, #instagram_logo:hover .cls-2-ins, #youtube_icon:hover .cls-1-yt, #reddit_icon:hover .cls-1-reddit, #tumblr_icon:hover .cls-1-tbr{
+    fill: #231f20;
+}
+
+#facebook_icon:hover .cls-2-fb, #twitter_icon:hover .cls-2-twt, #instagram_logo:hover .cls-1-ins, #youtube_icon:hover .cls-2-yt, #reddit_icon:hover .cls-2-reddit, #tumblr_icon:hover .cls-2-tbr{
+    fill: #fff;
+}
+
 
 #footer_nav {
     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     margin-bottom: 20px;
+}
+
+#mobile-bottom-nav-1 li, #mobile-bottom-nav-2 li {
+    font-size: 16px;
+    border-bottom: #231f20 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+
+#mobile-bottom-nav-1 {
+    padding-right: 40px;
+    border-right: 1px solid black;
+}
+
+#mobile-bottom-nav-1 li:last-of-type, #mobile-bottom-nav-2 li:last-of-type {
+    border-bottom: none;
+}
+
+#mobile-bottom-nav-1 li a:hover, #mobile-bottom-nav-2 li a:hover {
+    color: white;
 }
 
 #contact_form {
@@ -180,6 +272,48 @@ section, header {
 
     #main_header {
         height: 150px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #main_nav_1 {
+        height: 110px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #main_nav_1 ul li, #main_nav_2 ul li {
+        font-size: 16px;
+        border-right: 2px solid #707070;
+        padding-right: 5px;
+        padding-left: 5px;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    
+    #main_nav_1 ul li:last-of-type, #main_nav_2 ul li:last-of-type {
+        border-right: none;
+    }
+    
+    #main_nav_2 {
+        height: 110px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #main_nav_1 ul li a:hover, #main_nav_2 ul li a:hover {
+        border-bottom: 3px solid #231f20;
+        color: white;
+    }
+
+    #larger-top-nav-1, #larger-top-nav-2 {
+        padding-left: 0px;
     }
 
     #visual_appeal {
@@ -212,6 +346,14 @@ section, header {
 
     #logo_footer {
         margin-top: 40px;
+    }
+
+    #logo_footer, #footer_nav {
+        order: -1;
+    }
+
+    #social_media_icons, #contact_form {
+        order: 1;
     }
 
     #social_media_icons, #footer_nav, #contact_form {
