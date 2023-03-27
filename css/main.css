@@ -261,6 +261,28 @@ body {
     margin-bottom: 20px;
 }
 
+/* 9. 404 Page */
+
+#error404 {
+    height: 642px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+#error404 p {
+    color: #F90EFC;
+    margin-bottom: 20px;
+    text-shadow: #8A28C8 2px 2px;
+}
+
+#error404 p:last-of-type {
+    margin-bottom: 0px;
+}
+
 @media screen and (min-width: 768px) {
     .disappear {
         display: none;
