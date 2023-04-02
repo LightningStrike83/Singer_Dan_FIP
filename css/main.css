@@ -29,11 +29,7 @@ section, header {
 }
 
 .boxcolour {
-    background-color: darkblue;
-}
-
-.boxcolour3 {
-    background-color: orange;
+    background-color: #F90EFC;
 }
 
 .disappear {
@@ -152,11 +148,41 @@ body {
     align-self: center;
     margin-bottom: 32px;
     margin-top: 32px;
+    display: flex;
+}
+
+#arrows {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#arrows p {
+    align-self: center;
+    font-size: 48px;
 }
 
 #flavours_text {
     height: 185px;
     align-self: center;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#flavours_text p {
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+#flavours_text p:first-of-type, #flavours_text p:last-of-type {
+    text-align: center;
+}
+
+#flavours_text p:first-of-type {
+    text-shadow: #FFB62A 2px 2px;
 }
 
 /* 6. Collab */
@@ -173,9 +199,28 @@ body {
     height: 300px;
 }
 
+#red_crewmate {
+    transform: scaleX(-1);
+    position: absolute;
+}
+
 #collab_info {
     height: 180px;
     margin-top: 20px;
+}
+
+#collab_info p {
+    font-size: 20px;
+}
+
+#collab_info p:first-of-type {
+    text-align: center;
+    text-shadow: #FF0705 2px 2px;
+    margin-top: 5px;
+}
+
+#innersloth:hover {
+    color: white;
 }
 
 /* 7. Information */
@@ -188,6 +233,7 @@ body {
 
 #main_footer {
     height: 769px;
+    background-color: #F90EFC;
 }
 
 #logo_footer  {
