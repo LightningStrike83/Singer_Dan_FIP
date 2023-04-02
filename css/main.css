@@ -7,6 +7,8 @@
 a {
     text-decoration: none;
     color: #231f20;
+    font-family: 'Volkhov';
+    font-weight: 700;
 }
 
 p {
@@ -63,6 +65,7 @@ body {
 #main_header {
     height: 170px;
     margin: 0;
+    background-color: #F90EFC;
 }
 
 #header_logo {
@@ -256,11 +259,38 @@ body {
     color: white;
 }
 
-#contact_form {
+#newsletter {
     height: 269px;
     margin-bottom: 20px;
 }
 
+#newsletter p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+/* 9. Products */
+
+#flavours_display {
+    height: 604px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#products_display {
+    height: 555px;
+    margin-bottom: 20px;
+}
+
+#coming_soon {
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+/* 10. Contact Form */
+
+#contact_form {
+=======
 /* 9. 404 Page */
 
 #error404 {
@@ -269,6 +299,49 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#contact_form p {
+    color: #F90EFC;
+    margin-bottom: 20px;
+    text-shadow: #8A28C8 2px 2px;
+    text-align: center;
+}
+
+#inquiry {
+    margin-bottom: 20px;
+}
+
+#preferred_name, #email, #subject {
+    height: 30px;
+    width: 250px;
+}
+
+#comments {
+    height: 150px;
+    width: 250px;
+}
+
+#send {
+    height: 35px;
+    width: 70px;
+    background-color: #231f20;
+    color: white;
+    border: 1px white solid;
+}
+
+/* 11. 404 */
+
+#error404 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    height: 642px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+=======
     flex-wrap: wrap;
     background-color: #fff;
 }
@@ -305,7 +378,7 @@ body {
         margin-top: 20px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     
     #main_nav_1 ul li, #main_nav_2 ul li {
@@ -314,7 +387,10 @@ body {
         padding-right: 5px;
         padding-left: 5px;
         display: inline-flex;
-        justify-content: space-evenly;
+    }
+
+    #main_nav_1 ul li a {
+        display: flex;
     }
     
     #main_nav_1 ul li:last-of-type, #main_nav_2 ul li:last-of-type {
@@ -374,12 +450,25 @@ body {
         order: -1;
     }
 
-    #social_media_icons, #contact_form {
+     #newsletter {
         order: 1;
     }
 
-    #social_media_icons, #footer_nav, #contact_form {
+    #social_media_icons, #footer_nav, #newsletter {
         height: 237px;
+    }
+
+    #preferred_name, #email, #subject {
+        width: 400px;
+    }
+
+    #comments {
+        height: 150px;
+        width: 400px;
+    }
+
+    #newsletter p {
+        font-size: 30px;
     }
 
 }
@@ -402,7 +491,7 @@ body {
         height: 530px;
     }
 
-    #social_media_icons, #footer_nav, #contact_form {
+    #social_media_icons, #footer_nav, #newsletter {
         height: 277px;
     }
 
