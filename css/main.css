@@ -463,10 +463,6 @@ body {
 /* 10. Contact Form */
 
 #contact_form {
-=======
-/* 9. 404 Page */
-
-#error404 {
     height: 642px;
     display: flex;
     justify-content: center;
@@ -522,10 +518,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    text-align: center;
-=======
-    flex-wrap: wrap;
-    background-color: #fff;
 }
 
 #error404 p {
