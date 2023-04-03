@@ -8,3 +8,4 @@ console.log ('Send your tastebuds into orbit!');
 	};
 
 	button.addEventListener("click", hamburgerMenu);
+
