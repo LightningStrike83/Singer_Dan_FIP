@@ -155,12 +155,22 @@ body {
     margin-bottom: 32px;
     margin-top: 32px;
     display: flex;
+    position: relative;
 }
 
 #arrows {
-    position: relative;
     display: flex;
     flex-direction: row;
+}
+
+.left {
+    left: 0;
+    position: absolute;
+}
+
+.right {
+    position: absolute;
+    right: 0;
 }
 
 #arrows p {
@@ -202,11 +212,16 @@ body {
 }
 
 #mascot {
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
     align-items: end;
     position: relative;
+}
+
+#orbula_collab {
+    max-width: 100%;
 }
 
 #red_crewmate {
@@ -242,6 +257,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 
 #information p {
@@ -250,8 +268,13 @@ body {
     font-weight: 700;
 }
 
+#arrows_info {
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
 #slider_indicator {
-    align-self: flex-end;
     margin-bottom: 5px;
 }
 
@@ -351,7 +374,7 @@ body {
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
 }
@@ -363,15 +386,17 @@ body {
 
 #email_news {
     height: 40px;
-    width: 335px;
+    max-width: 335px;
     margin-bottom: 20px;
     border-radius: 7px;
+    margin-left: 20px;
 }
 
 #submit_news {
     height: 35px;
     width: 70px;
     border-radius: 7px;
+    margin-left: 20px;
 }
 
 #bottom_info {
@@ -394,10 +419,11 @@ body {
 /* 9. Products */
 
 #flavours_display {
-    height: 604px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #flavours_display p, #products_display p, #coming_soon p {
@@ -428,9 +454,10 @@ body {
 }
 
 #products_display {
-    height: 555px;
     margin-bottom: 20px;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .product_button {
@@ -453,10 +480,11 @@ body {
 }
 
 #coming_soon {
-    height: 600px;
     margin-bottom: 20px;
     text-align: center;
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #orbula_cs {
@@ -670,6 +698,17 @@ body {
 
     #social_media_icons, #footer_nav, #newsletter {
         height: 237px;
+    }
+
+    #social_media_icons {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .smicons {
+        flex-wrap: wrap;
+        margin-left: 12px;
+        margin-right: 12px;
     }
 
     #preferred_name, #email, #subject {
