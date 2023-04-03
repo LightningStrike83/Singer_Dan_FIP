@@ -46,13 +46,15 @@ section, header {
 
 body {
     background-image: url(../images/starry_background.jpg);
+    background-size: 300px;
 }
 
 /* 2. Container */
 
 #container {
     margin: 0 auto;
-    background-color: black;
+    background-image: url(../images/starry_background.jpg);
+    background-size: 300px;
     display: grid
 }
 
@@ -134,6 +136,7 @@ body {
 /* 4. Visual Appeal */
 
 #visual_appeal {
+    margin-top: 20px;
     height: 527px;
 }
 
@@ -196,7 +199,10 @@ body {
 }
 
 #mascot {
-    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: end;
 }
 
 #red_crewmate {
@@ -210,7 +216,7 @@ body {
 }
 
 #collab_info p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #collab_info p:first-of-type {
@@ -227,6 +233,38 @@ body {
 
 #information {
     height: 542px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#information p {
+    margin-top: 5px;
+    font-family: 'Volkhov';
+    font-weight: 700;
+}
+
+#slider_indicator {
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.circle {
+    height: 26px;
+    width: 26px;
+    margin-left: 5px;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#slider_indicator span {
+    background-color: white;
+}
+
+#video {
+    align-self: center;
 }
 
 /* 8. Footer */
@@ -291,7 +329,6 @@ body {
     list-style-type: none;
 }
 
-
 #mobile-bottom-nav-1 {
     padding-right: 40px;
     border-right: 1px solid black;
@@ -308,11 +345,29 @@ body {
 #newsletter {
     height: 269px;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 
 #newsletter p {
-    padding-top: 20px;
     font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#email_news {
+    height: 40px;
+    width: 335px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+#submit_news {
+    height: 35px;
+    width: 70px;
+    border-radius: 7px;
 }
 
 /* 9. Products */
@@ -324,14 +379,66 @@ body {
     text-align: center;
 }
 
+#flavours_display p, #products_display p, #coming_soon p {
+    font-size: 24px;
+    font-family: "Volkhov", sans-serif;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.planet_button {
+    height: 30px;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#flavours_display .planet_button p {
+    font-size: 18px;
+    font-family: 'Itim';
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
 #products_display {
     height: 555px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.product_button {
+    height: 30px;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#products_display .product_button p {
+    font-size: 18px;
+    font-family: 'Itim';
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
 }
 
 #coming_soon {
     height: 600px;
     margin-bottom: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#orbula_cs {
+    max-height: 600px;
 }
 
 /* 10. Contact Form */
@@ -358,19 +465,28 @@ body {
 #preferred_name, #email, #subject {
     height: 30px;
     width: 250px;
+    border-radius: 7px;
 }
 
 #comments {
     height: 150px;
     width: 250px;
+    border-radius: 7px;
 }
 
 #send {
     height: 35px;
     width: 70px;
-    background-color: #231f20;
+    background-color: #F90EFC;
     color: white;
     border: 1px white solid;
+    border-radius: 7px;
+}
+
+#send:hover {
+    color: #F90EFC;
+    background-color: white;
+    border: 1px #F90EFC solid;
 }
 
 /* 11. 404 */
@@ -408,15 +524,37 @@ body {
         margin-top: 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
     }
     
-    #main_nav_1 ul li, #main_nav_2 ul li {
+    #main_nav_1 ul li {
         font-size: 16px;
         border-right: 2px solid #707070;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-right: 8px;
+        padding-left: 8px;
         display: inline-flex;
+    }
+
+    #main_nav_1 ul li:first-of-type {
+        padding-left: 0;
+    }
+    
+    #main_nav_1 ul li:last-of-type {
+        padding-right: 0;
+    }
+
+    #main_nav_2 ul li {
+        font-size: 16px;
+        border-right: 2px solid #707070;
+        display: inline-flex;
+    }
+
+    #main_nav_2 ul li:first-of-type {
+        padding-right: 15px;
+    }
+    
+    #main_nav_2 ul li:last-of-type {
+        padding-left: 15px;
     }
 
     #main_nav_1 ul li a {
@@ -460,8 +598,19 @@ body {
         height: 350px;
     }
 
+    #flavours_text p {
+        font-size: 25px;
+    }
+
     #collab_info {
         margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #collab_info p {
+        font-size: 24px;
     }
 
     #mascot {
@@ -515,6 +664,14 @@ body {
 
     #flavours_text {
         height: 410px;
+    }
+
+    #flavours_text p {
+        font-size: 30px;
+    }
+
+    #collab_info p {
+        font-size: 30px;
     }
 
     #main_footer {
