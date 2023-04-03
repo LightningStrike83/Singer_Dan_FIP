@@ -224,6 +224,10 @@ body {
     max-width: 100%;
 }
 
+#orbula_collab {
+    position: absolute;
+}
+
 #red_crewmate {
     transform: scaleX(-1);
     position: absolute;
@@ -291,7 +295,7 @@ body {
     background-color: white;
 }
 
-#video {
+#yt_video {
     align-self: center;
 }
 
@@ -498,10 +502,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#contact_form img {
+    max-height: 20%;
 }
 
 #contact_form p {
+    z-index: 3;
     color: #F90EFC;
     margin-bottom: 20px;
     text-shadow: #8A28C8 2px 2px;
@@ -591,7 +600,7 @@ body {
     }
     
     #main_nav_1 ul li {
-        font-size: 16px;
+        font-size: 15px;
         border-right: 2px solid #707070;
         padding-right: 8px;
         padding-left: 8px;
