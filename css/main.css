@@ -206,11 +206,13 @@ body {
     flex-wrap: wrap;
     justify-content: right;
     align-items: end;
+    position: relative;
 }
 
 #red_crewmate {
     transform: scaleX(-1);
     position: absolute;
+    max-width: 50%;
 }
 
 #collab_info {
@@ -414,6 +416,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    justify-self: center;
 }
 
 #flavours_display .planet_button p {
