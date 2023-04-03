@@ -61,7 +61,6 @@ body {
 /* 3. Header */
 
 #main_header {
-    height: 170px;
     margin: 0;
     background-color: #F90EFC;
 }
@@ -71,7 +70,10 @@ body {
     align-self: center;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 #header_logo svg {
     height: 110px;
 }
@@ -88,43 +90,44 @@ body {
     margin-top: 27px;
 }
 
-#hamburger input, #burger-con {
+#burger_button {
+    height: 75px;
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#burger_con {
     display: none;
 }
 
-#hamburger img {
-    height: 46px;
-}
-
-#hamburger input:checked ~ label span {
-    transform: rotate(90deg);
-}
-
-#hamburger input:checked ~ #burger-con {
+#burger_con.display {
     display: block;
 }
 
-#hamburger li {
+#burger_con li {
     margin-top: 10px;
     margin-bottom: 10px;
     border-bottom: #231f20 2px solid;
     text-align: center;
     padding-bottom: 10px;
+    list-style-type: none;
 }
 
-#hamburger li:first-of-type {
+#burger_con li a {
+    font-family: 'Itim', sans-serif;
+}
+
+#burger_con li:first-of-type {
     padding-top: 10px;
 }
 
-#hamburger li:last-of-type {
+#burger_con li:last-of-type {
     border-bottom: none;
 }
 
-#hamburger ul {
-    background-color: #8A28C8;
-}
-
-#hamburger li:hover a {
+#burger_con li:hover a {
     color: white;
 }
 
@@ -270,7 +273,6 @@ body {
 /* 8. Footer */
 
 #main_footer {
-    height: 769px;
     background-color: #F90EFC;
 }
 
@@ -369,6 +371,23 @@ body {
     width: 70px;
     border-radius: 7px;
 }
+
+#bottom_info {
+    text-align: center;
+}
+
+#bottom_info a {
+    font-family: "Itim", sans-serif;
+    font-size: 14px;
+}
+
+#bottom_info p {
+    font-family: "Titan One", sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 
 /* 9. Products */
 
@@ -519,6 +538,10 @@ body {
         display: none;
     }
 
+    #burger_con {
+        display: none;
+    }
+
     #main_nav_1 {
         height: 110px;
         margin-top: 20px;
@@ -629,7 +652,7 @@ body {
         order: -1;
     }
 
-     #newsletter {
+     #newsletter, #bottom_info {
         order: 1;
     }
 
@@ -648,6 +671,15 @@ body {
 
     #newsletter p {
         font-size: 30px;
+    }
+
+    #bottom_info a {
+        font-size: 17px;
+    }
+    
+    #bottom_info p {
+        font-family: "Titan One", sans-serif;
+        font-size: 21px;
     }
 
 }
@@ -684,5 +716,14 @@ body {
 
     #logo_footer {
         margin-bottom: 40px;
+    }
+
+    #bottom_info a {
+        font-size: 20px;
+    }
+
+    #bottom_info p {
+        font-family: "Titan One", sans-serif;
+        font-size: 24px;
     }
 }
