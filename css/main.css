@@ -163,12 +163,12 @@ body {
     flex-direction: row;
 }
 
-.left {
+#left {
     left: 0;
     position: absolute;
 }
 
-.right {
+#right {
     position: absolute;
     right: 0;
 }
@@ -259,10 +259,8 @@ body {
     height: 542px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
     flex-direction: column;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -270,12 +268,29 @@ body {
     margin-top: 5px;
     font-family: 'Volkhov';
     font-weight: 700;
+    margin-bottom: 50px;
 }
 
 #arrows_info {
     display: flex;
     flex-direction: row;
     z-index: 3;
+}
+
+#left_info {
+    left: 0;
+    position: absolute;
+    top: 250px
+}
+
+#right_info {
+    position: absolute;
+    right: 0;
+    top: 250px;
+}
+
+iframe {
+    margin-bottom: 50px;
 }
 
 #slider_indicator {
@@ -505,12 +520,18 @@ body {
     flex-wrap: wrap;
 }
 
-#contact_form img {
-    max-height: 20%;
+#form_header {
+    height: 250px;
+    background-image: url(../images/orbula_chibi.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #contact_form p {
-    z-index: 3;
     color: #F90EFC;
     margin-bottom: 20px;
     text-shadow: #8A28C8 2px 2px;
