@@ -169,32 +169,29 @@ body {
     justify-content: center;
 }
 
-#arrows {
+#select_a_flavour {
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
 }
 
-#left {
-    left: 0;
-    position: absolute;
-    border: 1px solid #231F20;
-    border-radius: 50px;
-    background-color: #EC82EE;
+#select_a_flavour p {
+    font-size: 20px;
+}
+
+.index_button {
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-}
-
-#right {
-    position: absolute;
-    right: 0;
+    justify-self: center;
     border: 1px solid #231F20;
-    border-radius: 50px;
-    background-color: #EC82EE;
-    cursor: pointer;
-}
-
-#arrows p {
-    align-self: center;
-    font-size: 48px;
+    margin-right: 20px;
 }
 
 #flavour_index_current {
@@ -211,13 +208,13 @@ body {
 }
 
 #flavours_text p {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 16px;
     padding-left: 34px;
     padding-right: 34px;
 }
 
-#flavours_text p:first-of-type, #flavours_text p:last-of-type {
+#flavours_text p:first-of-type {
     text-align: center;
 }
 
@@ -304,6 +301,8 @@ body {
     text-align: center;
     flex-direction: column;
     position: relative;
+    border-radius: 30px;
+    box-shadow: 0 10px orange;
 }
 
 #information p {
@@ -503,40 +502,36 @@ iframe {
     margin-bottom: 20px;
 }
 
-#venus_button {
+#venus_button, #venus_button_index {
     background-color: #FFB62A;
 }
 
-#mercury_button {
+#mercury_button, #mercury_button_index {
     background-color: #FF317A;
 }
 
-#gaia_button {
+#gaia_button, #gaia_button_index {
     background-color: #31AC28;
 }
 
-#mars_button {
+#mars_button, #mars_button_index {
     background-color: #D22222;
 }
 
-#jupiter_button {
+#jupiter_button, #jupiter_button_index {
     background-color: #AC27B8;
 }
 
-#saturn_button {
+#saturn_button, #saturn_button_index {
     background-color: #8A28C8;
 }
 
-#uranus_button {
+#uranus_button, #uranus_button_index {
     background-color: #E0DE2B;
 }
 
-#neptune_button {
+#neptune_button, #neptune_button_index {
     background-color: #414AFF;
-}
-
-#venus_button {
-    background-color: #FFB62A;
 }
 
 .planet_button {
@@ -728,16 +723,12 @@ iframe {
 }
 
 @media screen and (min-width: 768px) {
-    .disappear {
-        display: none;
-    }
-
-    .appear {
-        display: block;
-    }
-
     #main_header {
         height: 150px;
+    }
+
+    #burger_con.display {
+        display: none;
     }
 
     #hamburger {
@@ -827,9 +818,14 @@ iframe {
         margin: 0;
     }
 
+    #select_a_flavour {
+        order: -1;
+    }
+
     #flavours_text {
         height: 350px;
         box-shadow: 10px 10px #FFB62A;
+        order: 1;
     }
 
     #flavours_text p {
