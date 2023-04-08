@@ -29,7 +29,7 @@ section, header {
 }
 
 .boxcolour {
-    background-color: #F90EFC;
+    background-color: #EC82EE;
 }
 
 .disappear {
@@ -62,7 +62,7 @@ body {
 
 #main_header {
     margin: 0;
-    background-color: #F90EFC;
+    background-color: #AE09B0;
 }
 
 #header_logo {
@@ -143,6 +143,16 @@ body {
     height: 527px;
 }
 
+#visual_appeal p {
+    font-size: 24px;
+    font-family: 'Volkhov';
+    color: #F90EFC;
+    text-shadow: 2px 2px #8A28C8;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* 5. Flavours */
 
 #flavours {
@@ -156,6 +166,7 @@ body {
     margin-top: 32px;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 #arrows {
@@ -166,16 +177,28 @@ body {
 #left {
     left: 0;
     position: absolute;
+    border: 1px solid #231F20;
+    border-radius: 50px;
+    background-color: #EC82EE;
+    cursor: pointer;
 }
 
 #right {
     position: absolute;
     right: 0;
+    border: 1px solid #231F20;
+    border-radius: 50px;
+    background-color: #EC82EE;
+    cursor: pointer;
 }
 
 #arrows p {
     align-self: center;
     font-size: 48px;
+}
+
+#flavour_index_current {
+    max-height: 100%;
 }
 
 #flavours_text {
@@ -184,6 +207,7 @@ body {
     display: flex;
     align-items: center;
     text-align: left;
+    border-radius: 10px;
 }
 
 #flavours_text p {
@@ -209,19 +233,36 @@ body {
 
 #new_flavour {
     height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#impostor_flavour {
+    max-height: 100%;
 }
 
 #mascot {
-    height: 300px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
     align-items: end;
     position: relative;
+    justify-content: right;
 }
 
-#orbula_collab {
+#orbula_collab_s {
+    max-height: 100%;
     max-width: 100%;
+    display: block;
+}
+
+#orbula_collab_m {
+    max-width: 100%;
+    display: none;
+}
+
+#orbula_collab_l {
+    max-width: 100%;
+    display: none;
 }
 
 #orbula_collab {
@@ -231,12 +272,13 @@ body {
 #red_crewmate {
     transform: scaleX(-1);
     position: absolute;
-    max-width: 50%;
+    max-width: 42%;
 }
 
 #collab_info {
     height: 180px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 #collab_info p {
@@ -268,7 +310,8 @@ body {
     margin-top: 5px;
     font-family: 'Volkhov';
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 #arrows_info {
@@ -280,17 +323,23 @@ body {
 #left_info {
     left: 0;
     position: absolute;
-    top: 250px
+    top: 250px;
+    border: 1px solid #231F20;
+    border-radius: 100px;
+    background-color: #EC82EE;
 }
 
 #right_info {
     position: absolute;
     right: 0;
     top: 250px;
+    border: 1px solid #231F20;
+    border-radius: 100px;
+    background-color: #EC82EE;
 }
 
 iframe {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 #slider_indicator {
@@ -317,7 +366,7 @@ iframe {
 /* 8. Footer */
 
 #main_footer {
-    background-color: #F90EFC;
+    background-color: #AE09B0;
 }
 
 #logo_footer  {
@@ -377,7 +426,7 @@ iframe {
 
 #mobile-bottom-nav-1 {
     padding-right: 40px;
-    border-right: 1px solid black;
+    border-right: 1px solid #231F20;
 }
 
 #mobile-bottom-nav-1 li:last-of-type, #mobile-bottom-nav-2 li:last-of-type {
@@ -420,6 +469,7 @@ iframe {
 
 #bottom_info {
     text-align: center;
+    background-color: #AE09B0;
 }
 
 #bottom_info a {
@@ -450,18 +500,56 @@ iframe {
     font-family: "Volkhov", sans-serif;
     margin-top: 10px;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#venus_button {
+    background-color: #FFB62A;
+}
+
+#mercury_button {
+    background-color: #FF317A;
+}
+
+#gaia_button {
+    background-color: #31AC28;
+}
+
+#mars_button {
+    background-color: #D22222;
+}
+
+#jupiter_button {
+    background-color: #AC27B8;
+}
+
+#saturn_button {
+    background-color: #8A28C8;
+}
+
+#uranus_button {
+    background-color: #E0DE2B;
+}
+
+#neptune_button {
+    background-color: #414AFF;
+}
+
+#venus_button {
+    background-color: #FFB62A;
 }
 
 .planet_button {
     height: 30px;
     width: 90px;
-    background-color: #fff;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     justify-self: center;
+    border: 1px solid #231F20;
+    margin-bottom: 20px;
 }
 
 #flavours_display .planet_button p {
@@ -470,6 +558,31 @@ iframe {
     padding-left: 0;
     padding-right: 0;
     margin: 0;
+}
+
+#current_bottle {
+    max-height: 100%;
+    margin-bottom: 20px;
+}
+
+#flavour_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#flavour_description p {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Itim';
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#flavour_description p:first-of-type {
+    text-align: center;
+    text-shadow: 2px 2px #FFB62A;
 }
 
 #products_display {
@@ -488,6 +601,10 @@ iframe {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 1px solid #231F20;
+    background-color: #F90EFC;
+    justify-self: center;
+    margin-bottom: 20px;
 }
 
 #products_display .product_button p {
@@ -496,6 +613,25 @@ iframe {
     padding-left: 0;
     padding-right: 0;
     margin: 0;
+}
+
+#current_product {
+    max-height: 100%;
+}
+
+#product_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#product_description p {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Itim';
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #coming_soon {
@@ -558,8 +694,8 @@ iframe {
     height: 35px;
     width: 70px;
     background-color: #F90EFC;
-    color: white;
-    border: 1px white solid;
+    color: #231F20;
+    border: 1px #231F20 solid;
     border-radius: 7px;
 }
 
@@ -622,7 +758,7 @@ iframe {
     
     #main_nav_1 ul li {
         font-size: 15px;
-        border-right: 2px solid #707070;
+        border-right: 2px solid #231F20;
         padding-right: 8px;
         padding-left: 8px;
         display: inline-flex;
@@ -638,7 +774,7 @@ iframe {
 
     #main_nav_2 ul li {
         font-size: 16px;
-        border-right: 2px solid #707070;
+        border-right: 2px solid #231F20;
         display: inline-flex;
     }
 
@@ -679,6 +815,10 @@ iframe {
         height: 562px;
     }
 
+    #visual_appeal p {
+        font-size: 45px;
+    }
+
     #flavours, #flavours_slider, #collab, #new_flavour, #mascot, #collab_info, #information {
         height: 512px;
     }
@@ -689,6 +829,7 @@ iframe {
 
     #flavours_text {
         height: 350px;
+        box-shadow: 10px 10px #FFB62A;
     }
 
     #flavours_text p {
@@ -708,6 +849,20 @@ iframe {
 
     #mascot {
         order: 1;
+    }
+
+    #orbula_collab_s {
+        max-width: 100%;
+        display: none;
+    }
+    
+    #orbula_collab_m {
+        max-width: 100%;
+        display: block;
+    }
+
+    #red_crewmate {
+        max-width: 50%;
     }
 
     #main_footer {
@@ -763,12 +918,32 @@ iframe {
         font-size: 21px;
     }
 
+    #bottle_image {
+        border-right: 3px solid #231F20;
+    }
+
+    #flavour_description p {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #product_description p {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
 
     #visual_appeal {
         height: 840px;
+    }
+
+    #visual_appeal p {
+        font-size: 60px;
     }
     
     #flavours, #flavours_slider, #collab, #new_flavour, #mascot, #collab_info, #information {
@@ -785,6 +960,16 @@ iframe {
 
     #collab_info p {
         font-size: 30px;
+    }
+
+    #orbula_collab_m {
+        max-width: 100%;
+        display: none;
+    }
+    
+    #orbula_collab_l {
+        max-width: 100%;
+        display: block;
     }
 
     #main_footer {
