@@ -74,10 +74,10 @@
             </nav>
         </header>
 
-        <section id="visual_appeal" class="col-span-full">
-            <h2 class="hidden">Visual Appeal</h2>
-            <p>Send Your Tastebuds Into Orbit</p>
-            <picture>
+        <section id="visual_appeal" class="col-span-full grid-con">
+            <h2 class="hidden" class="col-span-full">Visual Appeal</h2>
+            <p class="col-span-full">Send Your Tastebuds Into Orbit</p>
+            <picture class="col-span-full">
                 <img
                 sizes="(max-width: 1200px) 100vw, 1200px"
                 srcset="
@@ -103,7 +103,16 @@
                 images/orbitz_hero_axeahm_c_scale,w_1200.png 1200w"
                 src="images/orbitz_hero_axeahm_c_scale,w_1200.png"
                 alt="Lineup of Orbitz's drinks">
-                </picture>
+            </picture>
+            <div id="info_text" class="col-start-2 col-end-4 m-col-start-3 m-col-end-7">
+                <p class="info_1"></p>
+                <p class="info_2"></p>
+            </div>
+            <div id="interactive_icons" class="col-start-2 col-end-4 m-col-start-3 m-col-end-7">
+                <img data-member="0" id="leaves" src="images/leaves.svg" alt="Leaf Icon">
+                <img data-member="1" id="prohibited" src="images/prohibited.svg" alt="Prohibit Icon">
+                <img data-member="2" id="recycle" src="images/recycle.svg" alt="Recycle Icon">
+            </div>
         </section>
 
         <section id="flavours" class="col-span-full">
@@ -149,9 +158,9 @@
                 </div>
                 <div id="flavours_text" class="boxcolour col-start-3 col-end-5 m-col-start-6 m-col-end-9 l-col-start-6 l-col-end-9">
                     <div>
-                        <p>Vanilla Orange</p>
-                        <p>A delicious blend of citrusy orange mixed with the smoothness of vanilla.</p>
-                        <p>Planet Association: Venus</p>
+                        <p class="flavour_name">Vanilla Orange</p>
+                        <p class="flavour_description">A delicious blend of citrusy orange mixed with the smoothness of vanilla!</p>
+                        <p class="flavour_planet">Planet Association: Venus</p>
                     </div>
                 </div>
             </div>
@@ -188,20 +197,32 @@
 
         <section id="information" class="boxcolour col-span-full">
             <h2 class="hidden">Information About Orbitz</h2>
-            <!-- <div id="information_text">
-                <p id="collectibles_text">A lovable cast of characters underneath of our caps! 9 in total to collect! <a href="404.html"><u><span>Find out more!</span></u></a></p>
-              </div> -->
-              <p>Interview With The New CEO Of Orbitz</p>
-              <div id="arrows_info">
-                <p id="left_info">&lt;</p>
-                <p id="right_info">></p>
+            <p id="interview_title">Interview With The New CEO Of Orbitz</p>
+            <div class="arrows_info">
+                <p class="left_info">&lt;</p>
+                <p class="right_info">></p>
             </div>
-              <iframe id="yt_video" width="600" height="350" src="https://www.youtube.com/embed/fPLm9Sv0oAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <div id="slider_indicator">
-                  <span class="boxcolour3 circle"></span>
-                  <span class="boxcolour2 circle"></span>
-                  <span class="boxcolour2 circle"></span>
-              </div>
+            <iframe id="yt_video" width="600" height="350" src="https://www.youtube.com/embed/fPLm9Sv0oAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="slider_indicator">
+                <span class="bubblecolour2 circle first_bubble"></span>
+                <span class="bubblecolour circle second_bubble"></span>
+            </div>
+        </section>
+
+        <section id="information2" class="boxcolour col-span-full infoinactive">
+            <h2 class="hidden">Information About Orbitz</h2>
+            <p id="charity_title">Orbitz Proudly Supports These Charities</p>
+            <div class="arrows_info2">
+                <p class="left_info">&lt;</p>
+                <p class="right_info">></p>
+            </div>
+            <a href="https://www.worldwildlife.org/"><img id="WWF" src="images/WWF_logo.png" alt="World Wildlife Foundation's Logo"></a>
+            <a href="https://www.thetrevorproject.org/"><img id="trevorproject" src="images/trevorproject_logo.png" alt="Trevor Project's Logo"></a>
+            <a href="https://www.stjude.org/"><img id="stjude" src="images/stjude_logo.png" alt="St. Jude's Logo"></a>
+            <div id="slider_indicator2">
+                <span class="bubblecolour circle first_bubble"></span>
+                <span class="bubblecolour2 circle second_bubble"></span>
+            </div>
         </section>
 
         <footer id="main_footer" class="col-span-full">
@@ -402,5 +423,6 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
