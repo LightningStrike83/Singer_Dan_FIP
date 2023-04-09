@@ -9,9 +9,9 @@ let saturnButton = document.querySelector("#saturn_button");
 let uranusButton = document.querySelector("#uranus_button");
 let neptuneButton = document.querySelector("#neptune_button");
 let singleButton = document.querySelector("#bottle_button");
-let caseButton = document.querySelector("case_button");
-let partyButton = document.querySelector ("#party_button");
-let baggedButton = document.querySelector ("#bagged_button");
+let caseButton = document.querySelector("#case_button");
+let partyButton = document.querySelector("#party_button");
+let baggedButton = document.querySelector("#bagged_button");
 
 let flavours = [
 	{
@@ -64,12 +64,36 @@ let flavours = [
 	
 ]
 
+let product = [
+    {
+        text : 'A single bottle of any of our thirst-quenching drinks. Available at vending machines and checkout lanes everywhere!'
+    },
+
+    {
+        text : 'A case containing six bottles of a single flavour of any of our delicious drinks! Perfect for those who prefer to stick with what they love!'
+    },
+
+    {
+        text : 'A special deal for those who love variety or wish to share with others; 8 bottles for the price of 6! Every flavour is included in this special bundle!'
+    },
+
+    {
+        text : 'A Canadian classic! Our sweet and fruity drinks come in environmental friendly bags! Each bag comes with 6 little bags of one of delicious flavours. Exclusive to grocery stores and online purchases.'
+    }
+]
+
 function textChange() {
 	let flavourBeverage = this.dataset.member;
 
 	document.querySelector('.flavour_name').textContent = flavours[flavourBeverage].flavour;
 	document.querySelector('.flavour_description').textContent = flavours[flavourBeverage].description;
 	document.querySelector('.flavour_planet').textContent = flavours[flavourBeverage].planet;
+}
+
+function protextChange() {
+    let textDescription = this.dataset.member;
+
+    document.querySelector('#product_text').textContent = product[textDescription].text;
 }
 
 function venusChange() {
@@ -137,6 +161,26 @@ function neptuneChange() {
 	title.style.textShadow = '2px 2px #414AFF'
 }
 
+function singleChange() {
+    var singleImage = document.getElementById("current_product");
+    singleImage.src = "images/five_bottles.png";
+}
+
+function caseChange() {
+    var caseImage = document.getElementById("current_product");
+    caseImage.src = "images/6_pack.png";
+}
+
+function partyChange() {
+    var partyImage = document.getElementById("current_product");
+    partyImage.src = "images/8_pack.png";
+}
+
+function baggedChange() {
+    var partyImage = document.getElementById("current_product");
+    partyImage.src = "images/bagged.png";
+}
+
 venusButton.addEventListener("click", textChange);
 venusButton.addEventListener("click", venusChange);
 mercuryButton.addEventListener("click", textChange);
@@ -153,3 +197,11 @@ uranusButton.addEventListener("click", textChange);
 uranusButton.addEventListener("click", uranusChange);
 neptuneButton.addEventListener("click", textChange);
 neptuneButton.addEventListener("click", neptuneChange);
+singleButton.addEventListener("click", protextChange);
+singleButton.addEventListener("click", singleChange);
+caseButton.addEventListener("click", protextChange);
+caseButton.addEventListener("click", caseChange);
+partyButton.addEventListener("click", protextChange);
+partyButton.addEventListener("click", partyChange);
+baggedButton.addEventListener("click", protextChange);
+baggedButton.addEventListener("click", baggedChange);

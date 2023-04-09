@@ -76,7 +76,7 @@
 
         <section id="flavours_display" class="boxcolour col-span-full grid-con">
             <h2 class="hidden">Flavours</h3>
-            <p class="col-span-full">Flavours</p>
+            <p class="col-span-full"><u>Flavours</u></p>
 
             <div id="venus_button" data-member="0" class="planet_button col-span-1">
                 <p>Venus</p>
@@ -123,21 +123,21 @@
 
         <section id="products_display" class="boxcolour col-span-full grid-con">
             <h2 class="hidden">Products</h3>
-            <p class="col-span-full">Products</p>
+            <p class="col-span-full"><u>Products</u></p>
 
-            <div id="bottle_button" class="product_button col-span-1 m-col-start-1 m-col-end-2">
+            <div id="bottle_button" data-member="0" class="product_button col-span-1 m-col-start-1 m-col-end-2">
                 <p>Bottle</p>
             </div>
 
-            <div id="case_button" class="product_button col-span-1 m-col-start-3 m-col-end-4">
+            <div id="case_button" data-member="1" class="product_button col-span-1 m-col-start-3 m-col-end-4">
                 <p>Case</p>
             </div>
 
-            <div id="party_button" class="product_button col-span-1 m-col-start-6 m-col-end-7">
+            <div id="party_button" data-member="2" class="product_button col-span-1 m-col-start-6 m-col-end-7">
                 <p>Party</p>
             </div>
 
-            <div id="bagged_button" class="product_button col-span-1 m-col-start-8 m-col-end-9">
+            <div id="bagged_button" data-member="3" class="product_button col-span-1 m-col-start-8 m-col-end-9">
                 <p>Bagged</p>
             </div>
 
@@ -146,14 +146,15 @@
             </div>
 
             <div id="product_description" class="col-span-2 m-col-span-4">
-                <p>A single bottle of any of our thirst-quenching drinks. Available at vending machines and beverage fridges everywhere!</p>
+                <p id="product_text">A single bottle of any of our thirst-quenching drinks. Available at vending machines and beverage fridges everywhere!</p>
             </div>
         </section>
 
         <section id="coming_soon" class="boxcolour col-span-full grid-con">
             <h2 class="hidden">Coming Soon</h3>
-            <p class="col-span-full">Coming Soon</p>
-            <img id="orbula_cs" class="col-start-2 col-end-5 m-col-start-5 m-col-end-9" src="images/orbula_2.png" alt="Excited Orbula">
+            <p id="cs" class="col-span-full"><u>Coming Soon</u></p>
+            <img id="orbula_cs" class="col-start-1 col-end-4 m-col-start-5 m-col-end-9" src="images/orbula_2.png" alt="Excited Orbula">
+            <img id="mystery_bottle" class="col-span-1 m-col-start-2 m-col-end-5" src="images/mystery_bottle.png" alt="A mysterious new flavour is on the horizon">
         </section>
         <footer id="main_footer" class="col-span-full">
             <div id="footer_elements" class="grid-con">

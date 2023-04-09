@@ -197,10 +197,6 @@ body {
 
 /* 5. Flavours */
 
-#flavours {
-    height: 542px;
-}
-
 #flavours_slider {
     height: 260px;
     align-self: center;
@@ -266,10 +262,6 @@ body {
 }
 
 /* 6. Collab */
-
-#collab {
-    height: 525px;
-}
 
 #new_flavour {
     height: 300px;
@@ -338,7 +330,6 @@ body {
 /* 7. Information */
 
 #information {
-    height: 542px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -413,7 +404,6 @@ iframe {
 }
 
 #information2 {
-    height: 542px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -454,6 +444,7 @@ iframe {
 #stjude {
     max-height: 120px;
     max-width: 392px;
+    margin-bottom: 20px;
 }
 
 .arrows_info {
@@ -785,6 +776,11 @@ iframe {
     max-height: 600px;
 }
 
+#mystery_bottle {
+    max-height: 531px;
+    align-self: center;
+}
+
 /* 10. Contact Form */
 
 #contact_form {
@@ -1084,6 +1080,10 @@ iframe {
         font-size: 30px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #orbula_cs {
+        order: 1;
     }
 
 }
