@@ -213,10 +213,18 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+    border: 3px solid #AE09B0;
 }
 
 #select_a_flavour p {
     font-size: 20px;
+}
+
+#saf {
+    font-family: 'Volkhov';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .index_button {
@@ -335,7 +343,7 @@ body {
     text-align: center;
     flex-direction: column;
     position: relative;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 #information p {
@@ -409,7 +417,7 @@ iframe {
     text-align: center;
     flex-direction: column;
     position: relative;
-    border-radius: 30px;
+    border-radius: 10px;
     align-items: center;
 }
 
@@ -599,7 +607,17 @@ iframe {
     width: 70px;
     border-radius: 7px;
     margin-left: 20px;
+    color: #e4e4e4;
+    background-color: #231F20;
+    border: 1px #231F20 solid;
+    cursor: pointer;
 }
+
+#submit_news:hover {
+    color: #231F20;
+    background-color: #e4e4e4;
+}
+
 
 #bottom_info {
     text-align: center;
@@ -627,14 +645,15 @@ iframe {
     text-align: center;
     margin-left: 0;
     margin-right: 0;
+    border-radius: 10px;
 }
 
-#flavours_display p, #products_display p, #coming_soon p {
+#flavours_display p, #products_display p, #coming_soon p:not(#hype) {
     font-size: 24px;
     font-family: "Volkhov", sans-serif;
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #venus_button, #venus_button_index {
@@ -720,6 +739,7 @@ iframe {
     text-align: center;
     margin-left: 0;
     margin-right: 0;
+    border-radius: 10px;
 }
 
 .product_button {
@@ -770,15 +790,33 @@ iframe {
     flex-wrap: wrap;
     margin-left: 0;
     margin-right: 0;
+    border-radius: 10px;
+}
+
+#hype {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 #orbula_cs {
-    max-height: 600px;
+    max-height: 381px;
+    justify-self: center;
+    align-self: center;
 }
 
 #mystery_bottle {
-    max-height: 531px;
+    max-height: 275px;
     align-self: center;
+    justify-self: center;
+    border: 10px solid black;
+    background-color: #1B1F70;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* 10. Contact Form */
@@ -962,7 +1000,7 @@ iframe {
         max-height: 129px;
     }
 
-    #flavours, #flavours_slider, #collab, #new_flavour, #mascot, #collab_info, #information {
+    #flavours_slider, #collab, #new_flavour, #mascot, #collab_info {
         height: 512px;
     }
 
@@ -1083,7 +1121,19 @@ iframe {
     }
 
     #orbula_cs {
-        order: 1;
+        max-height: 531px;
+    }
+
+    #mystery_bottle {
+        max-height: 430px;
+    }
+
+    #hype {
+        font-size: 30px;
+    }
+
+    #select_a_flavour {
+        border: 5px solid #AE09B0;
     }
 
 }
