@@ -7,13 +7,13 @@
 a {
     text-decoration: none;
     color: #231f20;
-    font-family: 'Volkhov';
+    font-family: 'Volkhov', Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
 p {
     font-size: 30px;
-    font-family: 'Itim', Arial, sans-serif;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
     padding-left: 20px;
     padding-right: 20px;
     color: #231f20;
@@ -124,7 +124,7 @@ body {
 }
 
 #burger_con li a {
-    font-family: 'Itim', sans-serif;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
 }
 
 #burger_con li:first-of-type {
@@ -152,7 +152,7 @@ body {
 
 #visual_appeal p {
     font-size: 24px;
-    font-family: 'Volkhov';
+    font-family: 'Volkhov', Arial, Helvetica, sans-serif;
     color: #F90EFC;
     text-shadow: 2px 2px #8A28C8;
     text-align: center;
@@ -166,7 +166,7 @@ body {
 
 #info_text p {
     font-size: 20px;
-    font-family: 'itim';
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
     color: #F90EFC;
     text-shadow: none;
     text-align: center;
@@ -221,7 +221,7 @@ body {
 }
 
 #saf {
-    font-family: 'Volkhov';
+    font-family: 'Volkhov', Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
@@ -348,7 +348,7 @@ body {
 
 #information p {
     margin-top: 5px;
-    font-family: 'Volkhov';
+    font-family: 'Volkhov', Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -423,7 +423,7 @@ iframe {
 
 #information2 p {
     margin-top: 5px;
-    font-family: 'Volkhov';
+    font-family: 'Volkhov', Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -611,6 +611,7 @@ iframe {
     background-color: #231F20;
     border: 1px #231F20 solid;
     cursor: pointer;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
 }
 
 #submit_news:hover {
@@ -625,7 +626,7 @@ iframe {
 }
 
 #bottom_info a {
-    font-family: "Itim", sans-serif;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -650,7 +651,7 @@ iframe {
 
 #flavours_display p, #products_display p, #coming_soon p:not(#hype) {
     font-size: 24px;
-    font-family: "Volkhov", sans-serif;
+    font-family: "Volkhov", Arial, Helvetica, sans-serif;
     margin-top: 20px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -703,7 +704,7 @@ iframe {
 
 #flavours_display .planet_button p {
     font-size: 18px;
-    font-family: 'Itim';
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
     padding-left: 0;
     padding-right: 0;
     margin: 0;
@@ -723,7 +724,7 @@ iframe {
 #flavour_description p {
     font-size: 20px;
     text-align: left;
-    font-family: 'Itim';
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
     font-weight: normal;
     padding-left: 10px;
     padding-right: 10px;
@@ -759,7 +760,7 @@ iframe {
 
 #products_display .product_button p {
     font-size: 18px;
-    font-family: 'Itim';
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
     padding-left: 0;
     padding-right: 0;
     margin: 0;
@@ -778,7 +779,7 @@ iframe {
 #product_description p {
     font-size: 20px;
     text-align: left;
-    font-family: 'Itim';
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
     font-weight: normal;
     padding-left: 10px;
     padding-right: 10px;
@@ -830,7 +831,7 @@ iframe {
 }
 
 #form_header {
-    height: 250px;
+    height: 200px;
     background-image: url(../images/orbula_chibi.png);
     background-repeat: no-repeat;
     background-size: 20%;
@@ -870,6 +871,7 @@ iframe {
     color: #231F20;
     border: 1px #231F20 solid;
     border-radius: 7px;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
 }
 
 #send:hover {
@@ -899,6 +901,8 @@ iframe {
 #error404 p:last-of-type {
     margin-bottom: 0px;
 }
+
+/* 12. Media Queries- Tablet */
 
 @media screen and (min-width: 768px) {
     #main_header {
@@ -1108,6 +1112,10 @@ iframe {
         border-right: 3px solid #231F20;
     }
 
+    #product_image {
+        border-right: 3px solid #231F20;
+    }
+
     #flavour_description p {
         font-size: 30px;
         padding-left: 20px;
@@ -1137,6 +1145,8 @@ iframe {
     }
 
 }
+
+/* 12. Media Queries- Desktop */
 
 @media screen and (min-width: 1200px) {
 
